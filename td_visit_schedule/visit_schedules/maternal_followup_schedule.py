@@ -1,10 +1,9 @@
 from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
 
-from edc_visit_schedule import Schedule, Visit
-from dateutil.relativedelta import relativedelta
-
-from .maternal_crfs import crf_2000
+from .maternal_crfs import crf_2000, crf_2010, crf_2020, crf_2060, crf_2120, crf_2180
+from .maternal_crfs import crf_2240, crf_2300, crf_2360
+from .maternal_requisitions import requisitions_followup
 # TODO: Add PRN and Lab Requisitions for visits.
 
 schedule = Schedule(
@@ -19,9 +18,97 @@ visit2000 = Visit(
     code='2000M',
     title='Delivery Visit',
     timepoint=0,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(months=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=None,
+    requisitions=requisitions_followup,
     crfs=crf_2000,
+    facility_name='5-day clinic')
+
+visit2010 = Visit(
+    code='2010M',
+    title='1 Month Visit',
+    timepoint=1,
+    rbase=relativedelta(months=1),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2010,
+    facility_name='5-day clinic')
+
+visit2020 = Visit(
+    code='2020M',
+    title='2 Month Visit',
+    timepoint=2,
+    rbase=relativedelta(months=2),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2020,
+    facility_name='5-day clinic')
+
+visit2060 = Visit(
+    code='2060M',
+    title='6 Month Visit',
+    timepoint=6,
+    rbase=relativedelta(months=6),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2060,
+    facility_name='5-day clinic')
+
+visit2120 = Visit(
+    code='2120M',
+    title='12 Month Visit',
+    timepoint=12,
+    rbase=relativedelta(months=12),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2120,
+    facility_name='5-day clinic')
+
+visit2180 = Visit(
+    code='2180M',
+    title='18 Month Visit',
+    timepoint=18,
+    rbase=relativedelta(months=18),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2180,
+    facility_name='5-day clinic')
+
+visit2240 = Visit(
+    code='2240M',
+    title='24 Month Visit',
+    timepoint=24,
+    rbase=relativedelta(months=24),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2240,
+    facility_name='5-day clinic')
+
+visit2300 = Visit(
+    code='2300M',
+    title='30 Month Visit',
+    timepoint=30,
+    rbase=relativedelta(months=30),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2300,
+    facility_name='5-day clinic')
+
+visit2360 = Visit(
+    code='2360M',
+    title='36 Month Visit',
+    timepoint=36,
+    rbase=relativedelta(months=36),
+    rlower=relativedelta(days=0),
+    rupper=relativedelta(days=0),
+    requisitions=requisitions_followup,
+    crfs=crf_2360,
     facility_name='5-day clinic')
