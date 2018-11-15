@@ -8,7 +8,7 @@ from .crfs import crf_1000, crf_1010, crf_1020
 
 schedule = Schedule(
     name='schedule',
-    verbose_name='Day 1 to 36 months Follow-up',
+    verbose_name='Antenatal Visits',
     onschedule_model='td_maternal.onschedule',
     offschedule_model='td_maternal.maternaloffstudy',
     consent_model='td_maternal.maternalconsent',
