@@ -1,4 +1,4 @@
-from edc_visit_schedule import Schedule, Visit
+from edc_visit_schedule import Schedule, Visit, site_visit_schedules
 from dateutil.relativedelta import relativedelta
 
 from edc_visit_schedule import Schedule, Visit
