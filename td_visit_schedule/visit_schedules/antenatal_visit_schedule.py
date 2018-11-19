@@ -1,6 +1,6 @@
 from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
- 
+
 from .maternal_crfs import crf_1000
 
 # TODO: Add PRN and Lab Requisitions for visits.
