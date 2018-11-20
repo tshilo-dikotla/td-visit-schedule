@@ -1,10 +1,10 @@
-from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
+from edc_visit_schedule import Schedule, Visit
 
 from ...crfs_requisitions import crf_1000
 
-# TODO: Add PRN and Lab Requisitions for visits.
 
+# TODO: Add PRN and Lab Requisitions for visits.
 antenatal_schedule_1 = Schedule(
     name='antenatal_schedule_1',
     verbose_name='Antenatal Visits V1',

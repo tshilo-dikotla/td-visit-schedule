@@ -26,6 +26,7 @@ requisitions_1010m = FormsCollection(
     Requisition(
         show_order=70,
         panel=viral_load_panel, required=False, additional=True),
+    name='requisitions_1010m'
 )
 
 requisitions_1020m = FormsCollection(
@@ -44,6 +45,7 @@ requisitions_1020m = FormsCollection(
     Requisition(
         show_order=50,
         panel=glucose_2h_panel, required=False, additional=True),
+    name='requisitions_1020m'
 )
 
 requisitions_followup = FormsCollection(
@@ -62,4 +64,5 @@ requisitions_followup = FormsCollection(
     Requisition(
         show_order=50,
         panel=glucose_2h_panel, required=False, additional=True),
+    name='requisitions_followup'
 )
