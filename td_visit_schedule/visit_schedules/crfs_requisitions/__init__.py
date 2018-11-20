@@ -5,5 +5,5 @@ from .infant_crfs import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020, infant_crf_2060,
     infant_crf_2120, infant_crf_2180, infant_crf_2240, infant_crf_2300,
     infant_crf_2360)
-from .maternal_requisitions import (
-    requisitions_1010m, requisitions_1020m, requisitions_followup)
+# from .maternal_requisitions import (
+#     requisitions_1010m, requisitions_1020m, requisitions_followup)
