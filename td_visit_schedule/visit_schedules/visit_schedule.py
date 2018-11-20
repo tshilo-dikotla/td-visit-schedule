@@ -1,6 +1,7 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
-from .schedules import antenatal_schedule_1, antenatal_schedule_3
+from .schedules import (antenatal_schedule_1,
+                        antenatal_schedule_3, maternal_labour_schedule_v1)
 
 
 app_label = 'td_maternal'
@@ -29,10 +30,13 @@ site_visit_schedules.register(antenatal_visit_schedule_v1)
 site_visit_schedules.register(antenatal_visit_schedule_v3)
 
 maternal_labour_visit_schedule_v1 = VisitSchedule(
-    name='maternal_labour_visit_schedule',
-    verbose_name='Ambition',
-    offstudy_model=f'ambition_prn.studyterminationconclusion',
-    death_report_model=f'ambition_prn.deathreport',
+    name='maternal_labour_visit_schedule_v1',
+    verbose_name='Maternal Labour Visit Schedule',
+    offstudy_model=f'td_maternal.maternaloffstudy',
+    death_report_model=f'td_maternal.deathreport',
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None
 )
+
+maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_schedule_v1)
+site_visit_schedules.register(maternal_labour_visit_schedule_v1)

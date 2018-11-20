@@ -7,7 +7,7 @@ from ..crfs_requisitions import (
     crf_2240, crf_2300, crf_2360)
 from ..crfs_requisitions import requisitions_followup
 
-schedule = Schedule(
+maternal_labour_schedule_v1 = Schedule(
     name='schedule',
     verbose_name='Day 1 to 36 months Follow-up',
     onschedule_model='td_maternal.onschedulematernallabourdel',
@@ -114,12 +114,12 @@ visit2360 = Visit(
     crfs=crf_2360,
     facility_name='5-day clinic')
 
-schedule.add_visit(visit2000)
-schedule.add_visit(visit2010)
-schedule.add_visit(visit2020)
-schedule.add_visit(visit2060)
-schedule.add_visit(visit2120)
-schedule.add_visit(visit2180)
-schedule.add_visit(visit2240)
-schedule.add_visit(visit2300)
-schedule.add_visit(visit2360)
+maternal_labour_schedule_v1.add_visit(visit2000)
+maternal_labour_schedule_v1.add_visit(visit2010)
+maternal_labour_schedule_v1.add_visit(visit2020)
+maternal_labour_schedule_v1.add_visit(visit2060)
+maternal_labour_schedule_v1.add_visit(visit2120)
+maternal_labour_schedule_v1.add_visit(visit2180)
+maternal_labour_schedule_v1.add_visit(visit2240)
+maternal_labour_schedule_v1.add_visit(visit2300)
+maternal_labour_schedule_v1.add_visit(visit2360)
