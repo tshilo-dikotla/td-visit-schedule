@@ -1,6 +1,6 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
-from .schedules import antenatal_schedule_1, antenatal_schedule_3
+from .schedules.maternal import antenatal_schedule_1, antenatal_schedule_3
 
 
 app_label = 'td_maternal'
