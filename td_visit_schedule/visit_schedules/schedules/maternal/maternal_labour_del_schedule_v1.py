@@ -1,12 +1,11 @@
 from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
 
-from .maternal_crfs import (
+from ..crfs_requisitions import (
     crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2120, crf_2180,
     crf_2240, crf_2300, crf_2360)
-from .maternal_requisitions import requisitions_followup
-# TODO: Add PRN and Lab Requisitions for visits.
+from ..crfs_requisitions import requisitions_followup
 
 schedule = Schedule(
     name='schedule',
@@ -114,3 +113,13 @@ visit2360 = Visit(
     requisitions=requisitions_followup,
     crfs=crf_2360,
     facility_name='5-day clinic')
+
+schedule.add_visit(visit2000)
+schedule.add_visit(visit2010)
+schedule.add_visit(visit2020)
+schedule.add_visit(visit2060)
+schedule.add_visit(visit2120)
+schedule.add_visit(visit2180)
+schedule.add_visit(visit2240)
+schedule.add_visit(visit2300)
+schedule.add_visit(visit2360)

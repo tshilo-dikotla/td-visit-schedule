@@ -27,3 +27,12 @@ antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
 
 site_visit_schedules.register(antenatal_visit_schedule_v1)
 site_visit_schedules.register(antenatal_visit_schedule_v3)
+
+maternal_labour_visit_schedule_v1 = VisitSchedule(
+    name='maternal_labour_visit_schedule',
+    verbose_name='Ambition',
+    offstudy_model=f'ambition_prn.studyterminationconclusion',
+    death_report_model=f'ambition_prn.deathreport',
+    locator_model='edc_locator.subjectlocator',
+    previous_visit_schedule=None
+)
