@@ -92,7 +92,12 @@ crf_2180 = FormsCollection(
     Crf(show_order=5, model='td_maternal.maternalclinicalmeasurementstwo'),
     name='followup5')
 
-crf_2240 = crf_2180 + FormsCollection(
+crf_2240 = FormsCollection(
+    Crf(show_order=1, model='td_maternal.maternalpostpartumfu'),
+    Crf(show_order=2, model='td_maternal.maternalarvpost'),
+    Crf(show_order=3, model='td_maternal.maternalarvpostadh'),
+    Crf(show_order=4, model='td_maternal.maternalinterimidcc'),
+    Crf(show_order=5, model='td_maternal.maternalclinicalmeasurementstwo'),
     Crf(show_order=6, model='td_maternal.maternalcontraception'),
     Crf(show_order=7, model='td_maternal.maternalsrh'),
     name='follow6')

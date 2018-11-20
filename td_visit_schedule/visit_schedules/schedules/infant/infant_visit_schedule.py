@@ -1,6 +1,6 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 
-from .infant_followup_schedule import schedule
+from td_visit_schedule.visit_schedules.schedules.infant_followup_schedule import schedule
 
 app_label = 'td_visit_schedules'
 

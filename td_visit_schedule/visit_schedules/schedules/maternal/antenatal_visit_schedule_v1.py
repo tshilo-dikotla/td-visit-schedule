@@ -1,13 +1,13 @@
 from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
 
-from .maternal_crfs import crf_1000
+from ...crfs_requisitions import crf_1000
 
 # TODO: Add PRN and Lab Requisitions for visits.
 
-schedule = Schedule(
-    name='schedule',
-    verbose_name='Antenatal Visits',
+antenatal_schedule_1 = Schedule(
+    name='antenatal_schedule_1',
+    verbose_name='Antenatal Visits V1',
     onschedule_model='td_maternal.onscheduleantenatalenrollment',
     offschedule_model='td_maternal.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
@@ -24,4 +24,4 @@ visit1000 = Visit(
     crfs=crf_1000,
     facility_name='5-day clinic')
 
-schedule.add_visit(visit=visit1000)
+antenatal_schedule_1.add_visit(visit=visit1000)
