@@ -6,20 +6,20 @@ from .schedules import antenatal_schedule_1, antenatal_schedule_3
 app_label = 'td_maternal'
 
 antenatal_visit_schedule_v1 = VisitSchedule(
-    name='visit_schedule',
-    verbose_name='Ambition',
-    offstudy_model=f'ambition_prn.studyterminationconclusion',
-    death_report_model=f'ambition_prn.deathreport',
+    name='antenatal_visit_schedule_v1',
+    verbose_name='Antenatal Visit Schedule 1',
+    offstudy_model='td_maternal.maternaloffstudy',
+    death_report_model='td_maternal.deathreport',
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None)
 
 antenatal_visit_schedule_v1.add_schedule(antenatal_schedule_1)
 
 antenatal_visit_schedule_v3 = VisitSchedule(
-    name='visit_schedule_w10',
-    verbose_name='Ambition W10',
-    offstudy_model=f'ambition_prn.studyterminationconclusion',
-    death_report_model=f'ambition_prn.deathreport',
+    name='antenatal_visit_schedule_v3',
+    verbose_name='Antenatal Visit Schedule 3',
+    offstudy_model='td_maternal.maternaloffstudy',
+    death_report_model='td_maternal.deathreport',
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None)
 
