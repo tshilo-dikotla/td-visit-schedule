@@ -1,11 +1,12 @@
-from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
+from edc_visit_schedule import Schedule, Visit
 
-from ..crfs_requisitions import (
+from ...crfs_requisitions import (
     crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2120, crf_2180,
     crf_2240, crf_2300, crf_2360)
-from ..crfs_requisitions import requisitions_followup
+from ...crfs_requisitions import requisitions_followup
+
 
 maternal_labour_schedule_v1 = Schedule(
     name='schedule',
