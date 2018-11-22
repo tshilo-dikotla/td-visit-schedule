@@ -15,7 +15,7 @@ antenatal_schedule_3 = Schedule(
 
 visit1000 = Visit(
     code='1000M',
-    title='Antenatal Enrollment',
+    title='Antenatal Enrollment V3',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
