@@ -9,7 +9,7 @@ from ...crfs_requisitions import requisitions_followup
 
 
 maternal_labour_schedule_v1 = Schedule(
-    name='schedule',
+    name='maternal_labour_schedule_v1',
     verbose_name='Day 1 to 36 months Follow-up',
     onschedule_model='td_maternal.onschedulematernallabourdel',
     offschedule_model='td_maternal.maternaloffstudy',

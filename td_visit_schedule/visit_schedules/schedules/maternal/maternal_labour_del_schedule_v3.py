@@ -1,6 +1,6 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
-from ...crfs_requisitions import(
+from ...crfs_requisitions import (
     crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2180, crf_2240,
     crf_2300, crf_2360)
@@ -8,7 +8,7 @@ from ...crfs_requisitions import requisitions_followup
 
 
 maternal_labour_schedule_v3 = Schedule(
-    name='Follow up visit schedule v3',
+    name='maternal_labour_schedule_v3',
     verbose_name='Day 1 to 36 months Follow-up v3',
     onschedule_model='td_maternal.onschedulematernallabourdel',
     offschedule_model='td_maternal.maternaloffstudy',
