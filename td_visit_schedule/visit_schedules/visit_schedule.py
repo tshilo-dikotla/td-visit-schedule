@@ -1,6 +1,6 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
 from .schedules import antenatal_schedule_1, antenatal_schedule_3
-# from .schedules import maternal_labour_del_schedule_v1
+from .schedules import maternal_labour_schedule_v1
 
 
 app_label = 'td_maternal'
@@ -43,8 +43,8 @@ maternal_enrollment_visit_v3 = VisitSchedule(
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None
 )
-maternal_enrollment_visit_v3.add_schedule(maternal_enrollment_visit_v3)
+# maternal_enrollment_visit_v3.add_schedule(maternal_enrollment_visit_v3)
 
-site_visit_schedules.register(antenatal_visit_schedule_v1)
-site_visit_schedules.register(antenatal_visit_schedule_v3)
+# site_visit_schedules.register(antenatal_visit_schedule_v1)
+# site_visit_schedules.register(antenatal_visit_schedule_v3)
 site_visit_schedules.register(maternal_labour_visit_schedule_v1)
