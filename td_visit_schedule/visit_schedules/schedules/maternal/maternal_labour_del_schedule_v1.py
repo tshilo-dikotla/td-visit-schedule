@@ -8,9 +8,9 @@ from ...crfs_requisitions import (
 from ...crfs_requisitions import requisitions_followup
 
 
-maternal_labour_schedule_v1 = Schedule(
-    name='maternal_labour_schedule_v1',
-    verbose_name='Day 1 to 36 months Follow-up',
+maternal_labour_del_schedule_v1 = Schedule(
+    name='maternal_labour_del_schedule_1',
+    verbose_name='Day 1 to 36 months Follow-up V1',
     onschedule_model='td_maternal.onschedulematernallabourdel',
     offschedule_model='td_maternal.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
@@ -18,7 +18,7 @@ maternal_labour_schedule_v1 = Schedule(
 
 visit2000 = Visit(
     code='2000M',
-    title='Delivery Visit',
+    title='Delivery Visit V1',
     timepoint=0,
     rbase=relativedelta(months=0),
     rlower=relativedelta(days=0),
@@ -29,7 +29,7 @@ visit2000 = Visit(
 
 visit2010 = Visit(
     code='2010M',
-    title='1 Month Visit',
+    title='1 Month Visit V1',
     timepoint=1,
     rbase=relativedelta(months=1),
     rlower=relativedelta(days=0),
@@ -40,7 +40,7 @@ visit2010 = Visit(
 
 visit2020 = Visit(
     code='2020M',
-    title='2 Month Visit',
+    title='2 Month Visit V1',
     timepoint=2,
     rbase=relativedelta(months=2),
     rlower=relativedelta(days=0),
@@ -51,7 +51,7 @@ visit2020 = Visit(
 
 visit2060 = Visit(
     code='2060M',
-    title='6 Month Visit',
+    title='6 Month Visit V1',
     timepoint=6,
     rbase=relativedelta(months=6),
     rlower=relativedelta(days=0),
@@ -62,7 +62,7 @@ visit2060 = Visit(
 
 visit2120 = Visit(
     code='2120M',
-    title='12 Month Visit',
+    title='12 Month Visit V1',
     timepoint=12,
     rbase=relativedelta(months=12),
     rlower=relativedelta(days=0),
@@ -73,7 +73,7 @@ visit2120 = Visit(
 
 visit2180 = Visit(
     code='2180M',
-    title='18 Month Visit',
+    title='18 Month Visit V1',
     timepoint=18,
     rbase=relativedelta(months=18),
     rlower=relativedelta(days=0),
@@ -84,7 +84,7 @@ visit2180 = Visit(
 
 visit2240 = Visit(
     code='2240M',
-    title='24 Month Visit',
+    title='24 Month Visit V1',
     timepoint=24,
     rbase=relativedelta(months=24),
     rlower=relativedelta(days=0),
@@ -95,7 +95,7 @@ visit2240 = Visit(
 
 visit2300 = Visit(
     code='2300M',
-    title='30 Month Visit',
+    title='30 Month Visit V1',
     timepoint=30,
     rbase=relativedelta(months=30),
     rlower=relativedelta(days=0),
@@ -106,7 +106,7 @@ visit2300 = Visit(
 
 visit2360 = Visit(
     code='2360M',
-    title='36 Month Visit',
+    title='36 Month Visit V1',
     timepoint=36,
     rbase=relativedelta(months=36),
     rlower=relativedelta(days=0),
@@ -115,12 +115,12 @@ visit2360 = Visit(
     crfs=crf_2360,
     facility_name='5-day clinic')
 
-maternal_labour_schedule_v1.add_visit(visit2000)
-maternal_labour_schedule_v1.add_visit(visit2010)
-maternal_labour_schedule_v1.add_visit(visit2020)
-maternal_labour_schedule_v1.add_visit(visit2060)
-maternal_labour_schedule_v1.add_visit(visit2120)
-maternal_labour_schedule_v1.add_visit(visit2180)
-maternal_labour_schedule_v1.add_visit(visit2240)
-maternal_labour_schedule_v1.add_visit(visit2300)
-maternal_labour_schedule_v1.add_visit(visit2360)
+maternal_labour_del_schedule_v1.add_visit(visit2000)
+maternal_labour_del_schedule_v1.add_visit(visit2010)
+maternal_labour_del_schedule_v1.add_visit(visit2020)
+maternal_labour_del_schedule_v1.add_visit(visit2060)
+maternal_labour_del_schedule_v1.add_visit(visit2120)
+maternal_labour_del_schedule_v1.add_visit(visit2180)
+maternal_labour_del_schedule_v1.add_visit(visit2240)
+maternal_labour_del_schedule_v1.add_visit(visit2300)
+maternal_labour_del_schedule_v1.add_visit(visit2360)

@@ -7,9 +7,9 @@ from ...crfs_requisitions import (
 from ...crfs_requisitions import requisitions_followup
 
 
-maternal_labour_schedule_v3 = Schedule(
-    name='maternal_labour_schedule_v3',
-    verbose_name='Day 1 to 36 months Follow-up v3',
+maternal_labour_del_schedule_v3 = Schedule(
+    name='maternal_labour_del_schedule_3',
+    verbose_name='Day 1 to 36 months Follow-up V3',
     onschedule_model='td_maternal.onschedulematernallabourdel',
     offschedule_model='td_maternal.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
@@ -17,7 +17,7 @@ maternal_labour_schedule_v3 = Schedule(
 
 visit2000 = Visit(
     code='2000M',
-    title='Delivery Visit v3',
+    title='Delivery Visit V3',
     timepoint=0,
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
@@ -28,9 +28,9 @@ visit2000 = Visit(
 
 visit2010 = Visit(
     code='2010M',
-    title='1 Months Visit v3',
+    title='1 Months Visit V3',
     timepoint=1,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=1),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -40,9 +40,9 @@ visit2010 = Visit(
 
 visit2020 = Visit(
     code='2020M',
-    title='2 Months Visit v3',
+    title='2 Months Visit V3',
     timepoint=2,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=2),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -52,9 +52,9 @@ visit2020 = Visit(
 
 visit2060 = Visit(
     code='2060M',
-    title='6 Months Visit v3',
+    title='6 Months Visit V3',
     timepoint=6,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=6),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -64,9 +64,9 @@ visit2060 = Visit(
 
 visit2120 = Visit(
     code='2120M',
-    title='12 Months Visit v3',
+    title='12 Months Visit V3',
     timepoint=12,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=12),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -75,10 +75,10 @@ visit2120 = Visit(
 )
 
 visit2180 = Visit(
-    code='2120M',
-    title='18 Months Visit v3',
+    code='2180M',
+    title='18 Months Visit V3',
     timepoint=18,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=18),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -88,9 +88,9 @@ visit2180 = Visit(
 
 visit2240 = Visit(
     code='2240M',
-    title='24 Months Visit v3',
+    title='24 Months Visit V3',
     timepoint=24,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=24),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -100,9 +100,9 @@ visit2240 = Visit(
 
 visit2300 = Visit(
     code='2300M',
-    title='30 Months Visit v3',
+    title='30 Months Visit V3',
     timepoint=30,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=30),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -112,9 +112,9 @@ visit2300 = Visit(
 
 visit2360 = Visit(
     code='2360M',
-    title='36 Months Visit v3',
+    title='36 Months Visit V3',
     timepoint=36,
-    rbase=relativedelta(days=0),
+    rbase=relativedelta(days=36),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
@@ -122,12 +122,12 @@ visit2360 = Visit(
     facility_name='5-day clinic'
 )
 
-maternal_labour_schedule_v3.add_visit(visit2000)
-maternal_labour_schedule_v3.add_visit(visit2010)
-maternal_labour_schedule_v3.add_visit(visit2020)
-maternal_labour_schedule_v3.add_visit(visit2060)
-maternal_labour_schedule_v3.add_visit(visit2120)
-maternal_labour_schedule_v3.add_visit(visit2180)
-maternal_labour_schedule_v3.add_visit(visit2240)
-maternal_labour_schedule_v3.add_visit(visit2300)
-maternal_labour_schedule_v3.add_visit(visit2360)
+maternal_labour_del_schedule_v3.add_visit(visit2000)
+maternal_labour_del_schedule_v3.add_visit(visit2010)
+maternal_labour_del_schedule_v3.add_visit(visit2020)
+maternal_labour_del_schedule_v3.add_visit(visit2060)
+maternal_labour_del_schedule_v3.add_visit(visit2120)
+maternal_labour_del_schedule_v3.add_visit(visit2180)
+maternal_labour_del_schedule_v3.add_visit(visit2240)
+maternal_labour_del_schedule_v3.add_visit(visit2300)
+maternal_labour_del_schedule_v3.add_visit(visit2360)

@@ -1,12 +1,14 @@
 from edc_visit_schedule import VisitSchedule, site_visit_schedules
-from .schedules.maternal import antenatal_membership_schedule_1
 
-from .schedules import antenatal_schedule_1, antenatal_schedule_3
-from .schedules.maternal import antenatal_membership_schedule_v3
-
-from .schedules.maternal import maternal_labour_schedule_v1
+from .schedules import (
+    antenatal_schedule_1, antenatal_schedule_3, antenatal_membership_schedule_v3,
+    antenatal_membership_schedule_1, maternal_labour_del_schedule_v1,
+    maternal_labour_del_schedule_v3)
 
 app_label = 'td_maternal'
+
+
+# Anternatal Visit Schedules
 
 antenatal_visit_schedule_v1 = VisitSchedule(
     name='antenatal_visit_schedule_v1',
@@ -28,6 +30,20 @@ antenatal_visit_schedule_v3 = VisitSchedule(
 
 antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
 
+
+# Maternal Labour Visit Schedules
+
+
+maternal_labour_visit_schedule_v3 = VisitSchedule(
+    name='maternal_labour_visit_schedule_v3',
+    verbose_name='Maternal Labour Visit Schedule',
+    offstudy_model=f'td_maternal.maternaloffstudy',
+    death_report_model=f'td_maternal.deathreport',
+    locator_model='edc_locator.subjectlocator',
+    previous_visit_schedule=None
+)
+maternal_labour_visit_schedule_v3.add_schedule(maternal_labour_del_schedule_v3)
+
 maternal_labour_visit_schedule_v1 = VisitSchedule(
     name='maternal_labour_visit_schedule_v1',
     verbose_name='Maternal Labour Visit Schedule',
@@ -36,7 +52,10 @@ maternal_labour_visit_schedule_v1 = VisitSchedule(
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None
 )
-maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_schedule_v1)
+maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
+
+
+# Anternatal Membership Visit Schedules
 
 antenatal_membership_visit_schedule_v3 = VisitSchedule(
     name='antenatal_visit_membership_v3',
@@ -60,8 +79,13 @@ antenatal_membership_visit_schedule_v1 = VisitSchedule(
 antenatal_membership_visit_schedule_v1.add_schedule(
     antenatal_membership_schedule_1)
 
+# Registering Visit Schedules
+
 site_visit_schedules.register(antenatal_visit_schedule_v1)
 site_visit_schedules.register(antenatal_visit_schedule_v3)
+
 site_visit_schedules.register(maternal_labour_visit_schedule_v1)
+site_visit_schedules.register(maternal_labour_visit_schedule_v3)
+
 site_visit_schedules.register(antenatal_membership_visit_schedule_v3)
 site_visit_schedules.register(antenatal_membership_visit_schedule_v1)
