@@ -11,7 +11,7 @@ app_label = 'td_maternal'
 # Anternatal Visit Schedules
 
 antenatal_visit_schedule_v1 = VisitSchedule(
-    name='antenatal_visit_schedule_v1',
+    name='anv_schedule_v1',
     verbose_name='Antenatal Visit Schedule 1',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
@@ -21,7 +21,7 @@ antenatal_visit_schedule_v1 = VisitSchedule(
 antenatal_visit_schedule_v1.add_schedule(antenatal_schedule_1)
 
 antenatal_visit_schedule_v3 = VisitSchedule(
-    name='antenatal_visit_schedule_v3',
+    name='anv_schedule_v3',
     verbose_name='Antenatal Visit Schedule 3',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
@@ -35,7 +35,7 @@ antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
 
 
 maternal_labour_visit_schedule_v3 = VisitSchedule(
-    name='maternal_labour_visit_schedule_v3',
+    name='mtl_visit_schedule_v3',
     verbose_name='Maternal Labour Visit Schedule',
     offstudy_model=f'td_maternal.maternaloffstudy',
     death_report_model=f'td_maternal.deathreport',
@@ -45,7 +45,7 @@ maternal_labour_visit_schedule_v3 = VisitSchedule(
 maternal_labour_visit_schedule_v3.add_schedule(maternal_labour_del_schedule_v3)
 
 maternal_labour_visit_schedule_v1 = VisitSchedule(
-    name='maternal_labour_visit_schedule_v1',
+    name='mtl_visit_schedule_v1',
     verbose_name='Maternal Labour Visit Schedule',
     offstudy_model=f'td_maternal.maternaloffstudy',
     death_report_model=f'td_maternal.deathreport',
@@ -58,7 +58,7 @@ maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
 # Anternatal Membership Visit Schedules
 
 antenatal_membership_visit_schedule_v3 = VisitSchedule(
-    name='antenatal_visit_membership_v3',
+    name='anv_membership_v3',
     verbose_name='Antenatal Visit Membership v3',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
