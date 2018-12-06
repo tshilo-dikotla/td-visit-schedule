@@ -69,7 +69,7 @@ antenatal_membership_visit_schedule_v3.add_schedule(
     antenatal_membership_schedule_v3)
 
 antenatal_membership_visit_schedule_v1 = VisitSchedule(
-    name='antenatal_membership_visit_schedule_v1',
+    name='anv_membership_v1',
     verbose_name='Antenatal Visit Membership Schedule 1',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
