@@ -32,6 +32,15 @@ antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
 
 
 # Maternal Labour Visit Schedules
+maternal_labour_visit_schedule_v1 = VisitSchedule(
+    name='mtl_visit_schedule_v1',
+    verbose_name='Maternal Labour Visit Schedule',
+    offstudy_model=f'td_maternal.maternaloffstudy',
+    death_report_model=f'td_maternal.deathreport',
+    locator_model='edc_locator.subjectlocator',
+    previous_visit_schedule=None
+)
+maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
 
 
 maternal_labour_visit_schedule_v3 = VisitSchedule(
@@ -44,29 +53,8 @@ maternal_labour_visit_schedule_v3 = VisitSchedule(
 )
 maternal_labour_visit_schedule_v3.add_schedule(maternal_labour_del_schedule_v3)
 
-maternal_labour_visit_schedule_v1 = VisitSchedule(
-    name='mtl_visit_schedule_v1',
-    verbose_name='Maternal Labour Visit Schedule',
-    offstudy_model=f'td_maternal.maternaloffstudy',
-    death_report_model=f'td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
-    previous_visit_schedule=None
-)
-maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
-
 
 # Anternatal Membership Visit Schedules
-
-antenatal_membership_visit_schedule_v3 = VisitSchedule(
-    name='anv_membership_v3',
-    verbose_name='Antenatal Visit Membership v3',
-    offstudy_model='td_maternal.maternaloffstudy',
-    death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
-    previous_visit_schedule=None
-)
-antenatal_membership_visit_schedule_v3.add_schedule(
-    antenatal_membership_schedule_v3)
 
 antenatal_membership_visit_schedule_v1 = VisitSchedule(
     name='anv_membership_v1',
@@ -79,6 +67,18 @@ antenatal_membership_visit_schedule_v1 = VisitSchedule(
 antenatal_membership_visit_schedule_v1.add_schedule(
     antenatal_membership_schedule_1)
 
+antenatal_membership_visit_schedule_v3 = VisitSchedule(
+    name='anv_membership_v3',
+    verbose_name='Antenatal Visit Membership v3',
+    offstudy_model='td_maternal.maternaloffstudy',
+    death_report_model='td_maternal.deathreport',
+    locator_model='edc_locator.subjectlocator',
+    previous_visit_schedule=None
+)
+antenatal_membership_visit_schedule_v3.add_schedule(
+    antenatal_membership_schedule_v3)
+
+
 # Registering Visit Schedules
 
 site_visit_schedules.register(antenatal_visit_schedule_v1)
@@ -87,5 +87,5 @@ site_visit_schedules.register(antenatal_visit_schedule_v3)
 site_visit_schedules.register(maternal_labour_visit_schedule_v1)
 site_visit_schedules.register(maternal_labour_visit_schedule_v3)
 
-site_visit_schedules.register(antenatal_membership_visit_schedule_v3)
 site_visit_schedules.register(antenatal_membership_visit_schedule_v1)
+site_visit_schedules.register(antenatal_membership_visit_schedule_v3)
