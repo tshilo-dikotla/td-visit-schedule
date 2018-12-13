@@ -22,7 +22,7 @@ requisitions_1010m = FormsCollection(
         panel=glucose_2h_panel, required=True, additional=True),
     Requisition(
         show_order=60,
-        panel=pbmc_pl_panel, required=False, additional=True),
+        panel=pbmc_pl_panel, required=True, additional=True),
     Requisition(
         show_order=70,
         panel=viral_load_panel, required=False, additional=True),
