@@ -1,13 +1,13 @@
-from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
+from edc_visit_schedule import Schedule, Visit
 
-from ...crfs_requisitions import requisitions_1010m, requisitions_1020m
 from ...crfs_requisitions import crf_1010, crf_1020
+from ...crfs_requisitions import requisitions_1010m, requisitions_1020m
+
 
 # TODO: Add PRN and Lab Requisitions for visits.
-
 antenatal_membership_schedule_1 = Schedule(
-    name='antenatal_membership_schedule_1',
+    name='anv_membership_v1',
     verbose_name='Antenatal Visit Membership v1',
     onschedule_model='td_maternal.onscheduleantenatalvisitmembership',
     offschedule_model='td_maternal.maternaloffstudy',

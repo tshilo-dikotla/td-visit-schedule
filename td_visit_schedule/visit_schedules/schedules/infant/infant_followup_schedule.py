@@ -1,16 +1,14 @@
+from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit, site_visit_schedules
-from dateutil.relativedelta import relativedelta
 
-from edc_visit_schedule import Schedule, Visit
-from dateutil.relativedelta import relativedelta
-
+from .infant_crfs import (crf_2000, crf_2010, crf_2020,
+                          crf_2120, crf_2180, crf_2240,
+                          crf_2300, crf_2360, crf_2060)
 from .infant_requisitions import (infant_birth_requisitions, infant_1month_requisitions,
                                   infant_followup_requisitions,
                                   infant_18month_requisitions,
                                   infant_36month_requisitions)
-from .infant_crfs import (crf_2000, crf_2010, crf_2020,
-                          crf_2120, crf_2180, crf_2240,
-                          crf_2300, crf_2360, crf_2060)
+
 
 schedule = Schedule(
     name='schedule',
