@@ -19,7 +19,7 @@ maternal_labour_del_schedule_v1 = Schedule(
 visit2000 = Visit(
     code='2000M',
     title='Delivery Visit V1',
-    timepoint=0,
+    timepoint=30,
     rbase=relativedelta(months=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -30,7 +30,7 @@ visit2000 = Visit(
 visit2010 = Visit(
     code='2010M',
     title='1 Month Visit V1',
-    timepoint=1,
+    timepoint=50,
     rbase=relativedelta(months=1),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -41,7 +41,7 @@ visit2010 = Visit(
 visit2020 = Visit(
     code='2020M',
     title='2 Month Visit V1',
-    timepoint=2,
+    timepoint=110,
     rbase=relativedelta(months=2),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -52,7 +52,7 @@ visit2020 = Visit(
 visit2060 = Visit(
     code='2060M',
     title='6 Month Visit V1',
-    timepoint=6,
+    timepoint=170,
     rbase=relativedelta(months=6),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -63,7 +63,7 @@ visit2060 = Visit(
 visit2120 = Visit(
     code='2120M',
     title='12 Month Visit V1',
-    timepoint=12,
+    timepoint=230,
     rbase=relativedelta(months=12),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -74,7 +74,7 @@ visit2120 = Visit(
 visit2180 = Visit(
     code='2180M',
     title='18 Month Visit V1',
-    timepoint=18,
+    timepoint=290,
     rbase=relativedelta(months=18),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -85,7 +85,7 @@ visit2180 = Visit(
 visit2240 = Visit(
     code='2240M',
     title='24 Month Visit V1',
-    timepoint=24,
+    timepoint=350,
     rbase=relativedelta(months=24),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -96,7 +96,7 @@ visit2240 = Visit(
 visit2300 = Visit(
     code='2300M',
     title='30 Month Visit V1',
-    timepoint=30,
+    timepoint=410,
     rbase=relativedelta(months=30),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -107,7 +107,7 @@ visit2300 = Visit(
 visit2360 = Visit(
     code='2360M',
     title='36 Month Visit V1',
-    timepoint=36,
+    timepoint=470,
     rbase=relativedelta(months=36),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),

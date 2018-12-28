@@ -17,7 +17,7 @@ antenatal_membership_schedule_1 = Schedule(
 visit1010 = Visit(
     code='1010M',
     title='Antenatal Visit 1',
-    timepoint=1,
+    timepoint=5,
     rbase=relativedelta(days=1),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -28,7 +28,7 @@ visit1010 = Visit(
 visit1020 = Visit(
     code='1020M',
     title='Antenatal Visit 2',
-    timepoint=2,
+    timepoint=10,
     rbase=relativedelta(days=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
