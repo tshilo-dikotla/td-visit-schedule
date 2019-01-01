@@ -17,6 +17,7 @@ class Visit(BaseVisit):
             requisitions_prn=requisitions_prn,
             **kwargs)
 
+
 # TODO: Lab Requisitions for visits.
 antenatal_schedule_1 = Schedule(
     name='antenatal_schedule_1',

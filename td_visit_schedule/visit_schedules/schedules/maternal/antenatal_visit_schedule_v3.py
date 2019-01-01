@@ -17,8 +17,8 @@ class Visit(BaseVisit):
             requisitions_prn=requisitions_prn,
             **kwargs)
 
-# TODO: Lab Requisitions for visits.
 
+# TODO: Lab Requisitions for visits.
 antenatal_schedule_3 = Schedule(
     name='antenatal_schedule_3',
     verbose_name='Antenatal Visits V3',

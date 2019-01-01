@@ -22,6 +22,7 @@ class Visit(BaseVisit):
             requisitions_prn=requisitions_prn or default_requisitions_prn,
             **kwargs)
 
+
 # TODO: Add PRN for visits.
 antenatal_membership_schedule_v3 = Schedule(
     name='anv_membership_v3',
