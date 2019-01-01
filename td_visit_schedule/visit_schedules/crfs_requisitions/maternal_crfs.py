@@ -1,5 +1,16 @@
 from edc_visit_schedule import FormsCollection, Crf
 
+# crfs_prn = FormsCollection(
+#     Crf(show_order=1, model='td_maternal.maternaloffstudy'),
+#     Crf(show_order=2, model='td_maternal.deathreport'),
+#     Crf(show_order=3, model='td_maternal.maternallocator'),
+#     name='prn')
+
+# crfs_unscheduled = FormsCollection(
+#     Crf(show_order=1, model='td_maternal.maternaloffstudy'),
+#     name='unscheduled'
+# )
+
 crf_1000 = FormsCollection(
     Crf(show_order=1, model='td_maternal.maternalultrasoundinitial'),
     Crf(show_order=2, model='td_maternal.maternalobstericalhistory',

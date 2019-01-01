@@ -1,13 +1,31 @@
 from dateutil.relativedelta import relativedelta
-from edc_visit_schedule import Schedule, Visit
+from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ...crfs_requisitions import (
     crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2120, crf_2180,
     crf_2240, crf_2300, crf_2360)
-from ...crfs_requisitions import requisitions_followup
+from ...crfs_requisitions import (requisitions_followup,
+                                  requisitions_prn as default_requisitions_prn)
+
+default_requisitions = None
 
 
+class Visit(BaseVisit):
+
+    def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
+                 crfs_prn=None, requisitions_prn=None,
+                 allow_unscheduled=None, **kwargs):
+        super().__init__(
+            allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
+            crfs_unscheduled=crfs_unscheduled,
+            requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
+            crfs_prn=crfs_prn,
+            requisitions_prn=requisitions_prn or default_requisitions_prn,
+            **kwargs)
+
+
+# TODO: Add PRN for visits.
 maternal_labour_del_schedule_v1 = Schedule(
     name='mld_schedule_1',
     verbose_name='Day 1 to 36 months Follow-up V1',
