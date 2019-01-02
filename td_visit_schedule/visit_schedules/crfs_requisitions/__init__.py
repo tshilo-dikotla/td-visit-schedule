@@ -8,3 +8,7 @@ from .maternal_crfs import (
 from .maternal_requisitions import (
     requisitions_1010m, requisitions_1020m, requisitions_followup,
     requisitions_prn)
+from .infant_requisitions import (
+    infant_birth_requisitions, infant_1month_requisitions,
+    infant_followup_requisitions, infant_36month_requisitions,
+    infant_18month_requisitions)
