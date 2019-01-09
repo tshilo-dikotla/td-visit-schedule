@@ -18,7 +18,7 @@ infant_schedule_v3 = Schedule(
     onschedule_model='td_infant.onscheduleinfantbirth',
     offschedule_model='td_infant.infantoffstudy',
     consent_model='td_infant.infantdummysubjectconsent',
-    appointment_model='edc_appointment.appointment')
+    appointment_model='td_infant.appointment')
 
 visit2000 = Visit(
     code='2000M',
