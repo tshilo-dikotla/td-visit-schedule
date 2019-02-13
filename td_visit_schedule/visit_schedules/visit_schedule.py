@@ -9,7 +9,6 @@ from .schedules import (
 
 app_label = 'td_maternal'
 
-
 # Anternatal Visit Schedules
 
 antenatal_visit_schedule_v1 = VisitSchedule(
@@ -31,7 +30,6 @@ antenatal_visit_schedule_v3 = VisitSchedule(
     previous_visit_schedule=None)
 
 antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
-
 
 # Anternatal Membership Visit Schedules
 
@@ -57,7 +55,6 @@ antenatal_membership_visit_schedule_v3 = VisitSchedule(
 antenatal_membership_visit_schedule_v3.add_schedule(
     antenatal_membership_schedule_v3)
 
-
 # Maternal Labour Visit Schedules
 maternal_labour_visit_schedule_v1 = VisitSchedule(
     name='mtl_visit_schedule_v1',
@@ -69,7 +66,6 @@ maternal_labour_visit_schedule_v1 = VisitSchedule(
 )
 maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
 
-
 maternal_labour_visit_schedule_v3 = VisitSchedule(
     name='mtl_visit_schedule_v3',
     verbose_name='Maternal Labour Visit Schedule',
@@ -78,14 +74,8 @@ maternal_labour_visit_schedule_v3 = VisitSchedule(
     locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None
 )
-<<<<<<< HEAD
 
-antenatal_membership_visit_schedule_v3.add_schedule(
-    antenatal_membership_schedule_v3)
-=======
 maternal_labour_visit_schedule_v3.add_schedule(maternal_labour_del_schedule_v3)
->>>>>>> a48543b313dab6ee0a241e4969b71c9c7b0dc0bc
-
 
 # Registering Visit Schedules
 site_visit_schedules.register(antenatal_visit_schedule_v1)

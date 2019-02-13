@@ -1,5 +1,9 @@
 from edc_visit_schedule import FormsCollection, Crf
 
+crf_prn = FormsCollection(
+    Crf(show_order=1, model='td_prn.maternaloffstudy'),
+    Crf(show_order=2, model='td_prn.deathreport'),
+    name='prn')
 
 infant_crf_2000 = FormsCollection(
     Crf(show_order=1, model='td_infant.infantbirthdata'),

@@ -1,7 +1,7 @@
 from edc_visit_schedule import Schedule, Visit
 from dateutil.relativedelta import relativedelta
 
-from ...crfs_requisitions import crf_1000
+from ...crfs_requisitions import crf_1000, crfs_prn
 
 # TODO: Add PRN and Lab Requisitions for visits.
 
@@ -22,6 +22,7 @@ visit1000 = Visit(
     rupper=relativedelta(days=0),
     requisitions=None,
     crfs=crf_1000,
+    crfs_prn=crfs_prn,
     facility_name='5-day clinic')
 
 antenatal_schedule_3.add_visit(visit=visit1000)
