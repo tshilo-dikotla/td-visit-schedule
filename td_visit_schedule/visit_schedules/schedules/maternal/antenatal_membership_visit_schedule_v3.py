@@ -1,23 +1,41 @@
 from dateutil.relativedelta import relativedelta
-from edc_visit_schedule import Schedule, Visit
+from edc_visit_schedule import Schedule, Visit as BaseVisit
 
+from ...crfs_requisitions import (requisitions_1010m,
+                                  requisitions_1020m,
+                                  requisitions_prn as default_requisitions_prn)
 from ...crfs_requisitions import crf_1010, crf_1020
-from ...crfs_requisitions import requisitions_1010m, requisitions_1020m
+
+default_requisitions = None
 
 
-# TODO: Add PRN and Lab Requisitions for visits.
+class Visit(BaseVisit):
+
+    def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
+                 crfs_prn=None, requisitions_prn=None,
+                 allow_unscheduled=None, **kwargs):
+        super().__init__(
+            allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
+            crfs_unscheduled=crfs_unscheduled,
+            requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
+            crfs_prn=crfs_prn,
+            requisitions_prn=requisitions_prn or default_requisitions_prn,
+            **kwargs)
+
+
+# TODO: Add PRN for visits.
 antenatal_membership_schedule_v3 = Schedule(
     name='anv_membership_v3',
     verbose_name='Antenatal Visit Membership v3',
     onschedule_model='td_maternal.onscheduleantenatalvisitmembership',
-    offschedule_model='td_maternal.maternaloffstudy',
+    offschedule_model='td_prn.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
     appointment_model='edc_appointment.appointment')
 
 visit1010 = Visit(
     code='1010M',
     title='Antenatal Visit Membership 1 v3',
-    timepoint=1,
+    timepoint=5,
     rbase=relativedelta(days=1),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
@@ -28,7 +46,7 @@ visit1010 = Visit(
 visit1020 = Visit(
     code='1020M',
     title='Antenatal Visit Membership 2 v3',
-    timepoint=2,
+    timepoint=10,
     rbase=relativedelta(days=3),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
