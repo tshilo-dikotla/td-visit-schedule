@@ -1,7 +1,7 @@
 from edc_visit_schedule import FormsCollection, Requisition
 from td_labs import cd4_panel, viral_load_panel, pbmc_vl_panel
 from td_labs import fasting_glucose_panel, glucose_1h_panel, glucose_2h_panel
-from td_labs import pbmc_pl_panel, elisa_panel, insulin_panel
+from td_labs import pbmc_pl_panel
 
 requisitions_prn = FormsCollection(
     Requisition(
@@ -42,7 +42,7 @@ requisitions_1010m = FormsCollection(
         panel=glucose_2h_panel, required=True, additional=True),
     Requisition(
         show_order=60,
-        panel=pbmc_pl_panel, required=True, additional=True),
+        panel=pbmc_pl_panel, required=False, additional=True),
     Requisition(
         show_order=70,
         panel=viral_load_panel, required=False, additional=True),
