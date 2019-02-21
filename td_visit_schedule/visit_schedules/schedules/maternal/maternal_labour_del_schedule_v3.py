@@ -46,7 +46,7 @@ visit2000 = Visit(
 
 visit2010 = Visit(
     code='2010M',
-    title='1 Months Visit V3',
+    title='1 Month Visit V3',
     timepoint=50,
     rbase=relativedelta(days=1),
     rlower=relativedelta(days=0),

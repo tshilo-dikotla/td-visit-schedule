@@ -16,11 +16,10 @@ crf_1000 = FormsCollection(
     name='enrollment')
 
 crf_1010 = FormsCollection(
-    Crf(show_order=1, model='td_maternal.maternalultrasoundinitial'),
-    Crf(show_order=2, model='td_maternal.maternalrando', required=False),
-    Crf(show_order=3, model='td_maternal.maternalinterimidcc', required=False),
-    Crf(show_order=4, model='td_maternal.maternalclinicalmeasurementstwo'),
-    Crf(show_order=5, model='td_maternal.rapidtestresult', required=False),
+    Crf(show_order=1, model='td_maternal.maternalrando', required=False),
+    Crf(show_order=2, model='td_maternal.maternalinterimidcc', required=False),
+    Crf(show_order=3, model='td_maternal.maternalclinicalmeasurementstwo'),
+    Crf(show_order=4, model='td_maternal.rapidtestresult', required=False),
     name='antenatal1')
 
 crf_1020 = FormsCollection(
