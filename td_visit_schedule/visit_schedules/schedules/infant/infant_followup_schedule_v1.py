@@ -2,14 +2,13 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
 from ...crfs_requisitions import (
-    infant_crf_2000, infant_crf_2010, infant_crf_2020,
-    infant_crf_2120, infant_crf_2180, infant_crf_2240,
-    infant_crf_2300, infant_crf_2360, infant_crf_2060)
-
-from ...crfs_requisitions import (
     infant_birth_requisitions, infant_1month_requisitions,
     infant_followup_requisitions, infant_36month_requisitions,
     infant_18month_requisitions)
+from ...crfs_requisitions import (
+    infant_crf_2000, infant_crf_2010, infant_crf_2020,
+    infant_crf_2120, infant_crf_2180, infant_crf_2240,
+    infant_crf_2300, infant_crf_2360, infant_crf_2060)
 
 
 infant_schedule_v1 = Schedule(
@@ -21,7 +20,7 @@ infant_schedule_v1 = Schedule(
     appointment_model='td_infant.appointment')
 
 visit2000 = Visit(
-    code='2000M',
+    code='2000',
     title='Birth V1',
     timepoint=0,
     rbase=relativedelta(months=0),
@@ -32,7 +31,7 @@ visit2000 = Visit(
     facility_name='5-day clinic')
 
 visit2010 = Visit(
-    code='2010M',
+    code='2010',
     title='Infant 1 Month Visit V1',
     timepoint=10,
     rbase=relativedelta(months=1),
@@ -43,7 +42,7 @@ visit2010 = Visit(
     facility_name='5-day clinic')
 
 visit2020 = Visit(
-    code='2020M',
+    code='2020',
     title='Infant 2 Month Visit V1',
     timepoint=20,
     rbase=relativedelta(months=2),
@@ -54,7 +53,7 @@ visit2020 = Visit(
     facility_name='5-day clinic')
 
 visit2060 = Visit(
-    code='2060M',
+    code='2060',
     title='Infant 6 Month Visit V1',
     timepoint=20,
     rbase=relativedelta(months=6),
@@ -65,7 +64,7 @@ visit2060 = Visit(
     facility_name='5-day clinic')
 
 visit2120 = Visit(
-    code='2120M',
+    code='2120',
     title='Infant 12 Month Visit V1',
     timepoint=120,
     rbase=relativedelta(months=12),
@@ -76,7 +75,7 @@ visit2120 = Visit(
     facility_name='5-day clinic')
 
 visit2180 = Visit(
-    code='2180M',
+    code='2180',
     title='Infant 18 Month Visit V1',
     timepoint=180,
     rbase=relativedelta(months=18),
@@ -87,7 +86,7 @@ visit2180 = Visit(
     facility_name='5-day clinic')
 
 visit2240 = Visit(
-    code='2240M',
+    code='2240',
     title='Infant 24 Month Visit V1',
     timepoint=240,
     rbase=relativedelta(months=24),
@@ -98,7 +97,7 @@ visit2240 = Visit(
     facility_name='5-day clinic')
 
 visit2300 = Visit(
-    code='2300M',
+    code='2300',
     title='Infant 30 Month Visit V1',
     timepoint=300,
     rbase=relativedelta(months=30),
@@ -109,7 +108,7 @@ visit2300 = Visit(
     facility_name='5-day clinic')
 
 visit2360 = Visit(
-    code='2360M',
+    code='2360',
     title='Infant 36 Month Visit V1',
     timepoint=360,
     rbase=relativedelta(months=36),
