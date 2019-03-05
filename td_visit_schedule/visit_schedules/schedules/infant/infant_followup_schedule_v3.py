@@ -1,5 +1,5 @@
 from dateutil.relativedelta import relativedelta
-from edc_visit_schedule import Schedule, Visit
+from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ...crfs_requisitions import (
     infant_birth_requisitions, infant_1month_requisitions,
@@ -8,7 +8,24 @@ from ...crfs_requisitions import (
 from ...crfs_requisitions import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020,
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
-    infant_crf_2300, infant_crf_2360, infant_crf_2060)
+    infant_crf_2300, infant_crf_2360, infant_crf_2060,
+    infant_requisitions_prn as infant_requisitions_prn)
+
+default_requisitions = None
+
+
+class Visit(BaseVisit):
+
+    def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
+                 crfs_prn=None, requisitions_prn=None,
+                 allow_unscheduled=None, **kwargs):
+        super().__init__(
+            allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
+            crfs_unscheduled=crfs_unscheduled,
+            requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
+            crfs_prn=crfs_prn,
+            requisitions_prn=requisitions_prn or infant_requisitions_prn,
+            **kwargs)
 
 
 infant_schedule_v3 = Schedule(
