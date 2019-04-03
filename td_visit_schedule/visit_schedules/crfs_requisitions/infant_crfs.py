@@ -7,8 +7,6 @@ infant_crf_2000 = FormsCollection(
     Crf(show_order=3, model='td_infant.infantbirthfeedingvaccine'),
     Crf(show_order=4, model='td_infant.infantbirtharv'),
     Crf(show_order=5, model='td_infant.infantcongenitalanomalies'),
-    Crf(show_order=6, model='td_infant.infantdeathreport', required=False,
-        additional=True),
     Crf(show_order=7, model='td_infant.infantnvpdispensing', required=False,
         additional=True),
     name='Birth'
