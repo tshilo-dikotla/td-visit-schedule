@@ -13,7 +13,7 @@ antenatal_visit_schedule_v1 = VisitSchedule(
     verbose_name='Antenatal Visit Schedule 1',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None)
 
 antenatal_visit_schedule_v1.add_schedule(antenatal_schedule_1)
@@ -23,7 +23,7 @@ antenatal_visit_schedule_v3 = VisitSchedule(
     verbose_name='Antenatal Visit Schedule 3',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None)
 
 antenatal_visit_schedule_v3.add_schedule(antenatal_schedule_3)
@@ -36,7 +36,7 @@ antenatal_membership_visit_schedule_v1 = VisitSchedule(
     verbose_name='Antenatal Visit Membership Schedule 1',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_report.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 antenatal_membership_visit_schedule_v1.add_schedule(
@@ -47,7 +47,7 @@ antenatal_membership_visit_schedule_v3 = VisitSchedule(
     verbose_name='Antenatal Visit Membership v3',
     offstudy_model='td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 antenatal_membership_visit_schedule_v3.add_schedule(
@@ -60,7 +60,7 @@ maternal_labour_visit_schedule_v1 = VisitSchedule(
     verbose_name='Maternal Labour Visit Schedule',
     offstudy_model=f'td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 maternal_labour_visit_schedule_v1.add_schedule(maternal_labour_del_schedule_v1)
@@ -71,7 +71,7 @@ maternal_labour_visit_schedule_v3 = VisitSchedule(
     verbose_name='Maternal Labour Visit Schedule',
     offstudy_model=f'td_maternal.maternaloffstudy',
     death_report_model='td_maternal.deathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 maternal_labour_visit_schedule_v3.add_schedule(maternal_labour_del_schedule_v3)
@@ -84,7 +84,7 @@ infant_visit_schedule_v1 = VisitSchedule(
     verbose_name='Infant Visit Schedule V1',
     offstudy_model='td_infant.infantoffstudy',
     death_report_model='td_infant.infantdeathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 infant_visit_schedule_v1.add_schedule(infant_schedule_v1)
@@ -94,7 +94,7 @@ infant_visit_schedule_v3 = VisitSchedule(
     verbose_name='Infant Visit Schedule V3',
     offstudy_model='td_infant.infantoffstudy',
     death_report_model='td_infant.infantdeathreport',
-    locator_model='edc_locator.subjectlocator',
+    locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
 infant_visit_schedule_v3.add_schedule(infant_schedule_v3)

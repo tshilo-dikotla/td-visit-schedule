@@ -39,7 +39,7 @@ infant_birth_requisitions = FormsCollection(
         show_order=40, panel=infant_pbmc_pl_panel, required=True, additional=True),
     Requisition(
         show_order=50, panel=dna_pcr, required=False, additional=True),
-    name='requisitions_2000m'
+    name='requisitions_2000'
 )
 
 infant_1month_requisitions = FormsCollection(
@@ -55,7 +55,7 @@ infant_1month_requisitions = FormsCollection(
         show_order=50, panel=serum_panel, required=True, additional=True),
     Requisition(
         show_order=60, panel=dbs_panel, required=False, additional=True),
-    name='requisitions_2010m'
+    name='requisitions_2010'
 )
 
 infant_followup_requisitions = FormsCollection(
@@ -71,7 +71,7 @@ infant_followup_requisitions = FormsCollection(
     Requisition(
         show_order=40,
         panel=infant_elisa_panel, required=False, additional=True),
-    name='requisitions_2020m'
+    name='requisitions_2020'
 )
 
 infant_36month_requisitions = FormsCollection(
@@ -93,7 +93,7 @@ infant_36month_requisitions = FormsCollection(
     Requisition(
         show_order=60,
         panel=infant_elisa_panel, required=False, additional=True),
-    name='requisitions_2360m'
+    name='requisitions_2360'
 )
 
 infant_18month_requisitions = FormsCollection(
@@ -115,5 +115,5 @@ infant_18month_requisitions = FormsCollection(
     Requisition(
         show_order=70,
         panel=dna_pcr, required=False, additional=True),
-    name='requisitions_2180m'
+    name='requisitions_2180'
 )
