@@ -21,6 +21,8 @@ infant_crf_2010 = FormsCollection(
     Crf(show_order=6, model='td_infant.infantfeeding'),
     Crf(show_order=7, model='td_infant.infantnvpadjustment'),
     Crf(show_order=8, model='td_infant.infantfuimmunizations'),
+    Crf(show_order=9, model='td_infant.karabotuberculosishistory', required=False),
+    Crf(show_order=10, model='td_infant.karabooffstudy', required=False),
     name='Infant 1 Month Visit'
 )
 
@@ -32,6 +34,8 @@ infant_crf_2020 = FormsCollection(
     Crf(show_order=5, model='td_infant.infantfuimmunizations'),
     Crf(show_order=6, model='td_infant.infantarvproph'),
     Crf(show_order=7, model='td_infant.infantfeeding'),
+    Crf(show_order=8, model='td_infant.karabotuberculosishistory', required=False),
+    Crf(show_order=9, model='td_infant.karabooffstudy', required=False),
     name='Infant 2 Month Visit '
 )
 
@@ -43,6 +47,8 @@ infant_crf_2060 = FormsCollection(
     Crf(show_order=5, model='td_infant.infantfeeding'),
     Crf(show_order=6, model='td_infant.solidfoodassessment'),
     Crf(show_order=7, model='td_infant.infantfuimmunizations'),
+    Crf(show_order=8, model='td_infant.karabotuberculosishistory', required=False),
+    Crf(show_order=9, model='td_infant.karabooffstudy', required=False),
     name='Infant 6 Month Visit '
 )
 
@@ -54,6 +60,8 @@ infant_crf_2120 = FormsCollection(
     Crf(show_order=5, model='td_infant.infantfeeding'),
     Crf(show_order=6, model='td_infant.solidfoodassessment'),
     Crf(show_order=7, model='td_infant.infantfuimmunizations'),
+    Crf(show_order=9, model='td_infant.karabotuberculosishistory', required=False),
+    Crf(show_order=10, model='td_infant.karabooffstudy', required=False),
     name='Infant 12 Month Visit'
 )
 
@@ -65,6 +73,8 @@ infant_crf_2180 = FormsCollection(
     Crf(show_order=5, model='td_infant.infantfeeding'),
     Crf(show_order=6, model='td_infant.solidfoodassessment'),
     Crf(show_order=7, model='td_infant.infantfuimmunizations'),
+    Crf(show_order=9, model='td_infant.karabotuberculosishistory', required=False),
+    Crf(show_order=10, model='td_infant.karabooffstudy', required=False),
     name='Infant 18 Month Visit'
 )
 
