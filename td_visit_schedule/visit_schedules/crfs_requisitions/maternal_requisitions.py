@@ -9,18 +9,15 @@ requisitions_prn = FormsCollection(
         panel=cd4_panel, required=False, additional=False),
     Requisition(
         show_order=20,
-        panel=pbmc_pl_panel, required=False, additional=False),
-    Requisition(
-        show_order=30,
         panel=viral_load_panel, required=False, additional=False),
     Requisition(
-        show_order=40,
+        show_order=30,
         panel=fasting_glucose_panel, required=False, additional=False),
     Requisition(
-        show_order=50,
+        show_order=40,
         panel=glucose_1h_panel, required=False, additional=False),
     Requisition(
-        show_order=60,
+        show_order=50,
         panel=glucose_2h_panel, required=False, additional=False),
     name='requisitions_prn')
 
