@@ -4,7 +4,7 @@ from edc_visit_schedule import Schedule, Visit as BaseVisit
 from ...crfs_requisitions import (
     infant_birth_requisitions, infant_1month_requisitions,
     infant_followup_requisitions, infant_36month_requisitions,
-    infant_18month_requisitions)
+    infant_18month_requisitions, infant_24month_requisitions)
 from ...crfs_requisitions import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020,
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
@@ -109,7 +109,7 @@ visit2240 = Visit(
     rbase=relativedelta(months=24),
     rlower=relativedelta(months=3),
     rupper=relativedelta(months=3),
-    requisitions=infant_followup_requisitions,
+    requisitions=infant_24month_requisitions,
     crfs=infant_crf_2240,
     facility_name='5-day clinic')
 

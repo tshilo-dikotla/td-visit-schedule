@@ -37,8 +37,6 @@ infant_birth_requisitions = FormsCollection(
         show_order=30, panel=infant_glucose_panel, required=True, additional=True),
     Requisition(
         show_order=40, panel=infant_pbmc_pl_panel, required=True, additional=True),
-    Requisition(
-        show_order=50, panel=dna_pcr, required=False, additional=True),
     name='requisitions_2000'
 )
 
@@ -60,60 +58,46 @@ infant_1month_requisitions = FormsCollection(
 
 infant_followup_requisitions = FormsCollection(
     Requisition(
-        show_order=10,
-        panel=dna_pcr, required=False, additional=True),
-    Requisition(
-        show_order=20,
-        panel=infant_glucose_panel, required=False, additional=True),
-    Requisition(
-        show_order=30,
-        panel=infant_insulin, required=False, additional=True),
-    Requisition(
-        show_order=40,
-        panel=infant_elisa_panel, required=False, additional=True),
+        show_order=10, panel=dna_pcr, required=False, additional=True),
     name='requisitions_2020'
-)
-
-infant_36month_requisitions = FormsCollection(
-    Requisition(
-        show_order=10,
-        panel=infant_insulin, required=True, additional=True),
-    Requisition(
-        show_order=20,
-        panel=infant_glucose_panel, required=True, additional=True),
-    Requisition(
-        show_order=30,
-        panel=infant_pbmc_pl_panel, required=True, additional=True),
-    Requisition(
-        show_order=40,
-        panel=serum_panel, required=True, additional=True),
-    Requisition(
-        show_order=50,
-        panel=dna_pcr, required=False, additional=True),
-    Requisition(
-        show_order=60,
-        panel=infant_elisa_panel, required=False, additional=True),
-    name='requisitions_2360'
 )
 
 infant_18month_requisitions = FormsCollection(
     Requisition(
-        show_order=10,
-        panel=infant_insulin, required=True, additional=True),
+        show_order=10, panel=infant_insulin, required=True, additional=True),
     Requisition(
-        show_order=20,
-        panel=infant_glucose_panel, required=True, additional=True),
+        show_order=20, panel=infant_glucose_panel, required=True, additional=True),
     Requisition(
-        show_order=40,
-        panel=infant_elisa_panel, required=False, additional=True),
+        show_order=30, panel=infant_elisa_panel, required=False, additional=True),
     Requisition(
-        show_order=50,
-        panel=serum_panel, required=True, additional=True),
+        show_order=40, panel=serum_panel, required=True, additional=True),
     Requisition(
-        show_order=60,
-        panel=infant_pbmc_pl_panel, required=True, additional=True),
-    Requisition(
-        show_order=70,
-        panel=dna_pcr, required=False, additional=True),
+        show_order=50, panel=infant_pbmc_pl_panel, required=True, additional=True),
     name='requisitions_2180'
+)
+
+# this list of requisitions applies to consent v3 infants only.
+infant_24month_requisitions = FormsCollection(
+    Requisition(
+        show_order=10, panel=infant_insulin, required=True, additional=True),
+    Requisition(
+        show_order=20, panel=infant_glucose_panel, required=True, additional=True),
+    Requisition(
+        show_order=30, panel=serum_panel, required=True, additional=True),
+    Requisition(
+        show_order=40, panel=infant_pbmc_pl_panel, required=True, additional=True),
+    name='requisitions_2240'
+)
+
+# this list of requisitions applies to consent v3 infants only.
+infant_36month_requisitions = FormsCollection(
+    Requisition(
+        show_order=10, panel=infant_insulin, required=True, additional=True),
+    Requisition(
+        show_order=20, panel=infant_glucose_panel, required=True, additional=True),
+    Requisition(
+        show_order=30, panel=infant_pbmc_pl_panel, required=True, additional=True),
+    Requisition(
+        show_order=40, panel=serum_panel, required=True, additional=True),
+    name='requisitions_2360'
 )
