@@ -28,7 +28,7 @@ antenatal_membership_schedule_1 = Schedule(
     name='anv_membership_v1',
     verbose_name='Antenatal Visit Membership v1',
     onschedule_model='td_maternal.onscheduleantenatalvisitmembership',
-    offschedule_model='td_maternal.maternaloffstudy',
+    offschedule_model='td_prnl.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
     appointment_model='edc_appointment.appointment')
 
