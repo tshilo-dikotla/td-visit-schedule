@@ -23,7 +23,7 @@ antenatal_schedule_3 = Schedule(
     name='antenatal_schedule_3',
     verbose_name='Antenatal Visits V3',
     onschedule_model='td_maternal.onscheduleantenatalenrollment',
-    offschedule_model='td_prnl.maternaloffstudy',
+    offschedule_model='td_prn.maternaloffstudy',
     consent_model='td_maternal.subjectconsent',
     appointment_model='edc_appointment.appointment')
 
