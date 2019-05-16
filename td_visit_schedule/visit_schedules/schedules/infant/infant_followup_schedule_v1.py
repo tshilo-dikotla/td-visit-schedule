@@ -72,7 +72,7 @@ visit2020 = Visit(
 visit2060 = Visit(
     code='2060',
     title='Infant 6 Month Visit V1',
-    timepoint=20,
+    timepoint=60,
     rbase=relativedelta(months=6),
     rlower=relativedelta(days=89),
     rupper=relativedelta(days=60),
