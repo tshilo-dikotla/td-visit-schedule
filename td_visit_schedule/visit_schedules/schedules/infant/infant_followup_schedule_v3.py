@@ -138,6 +138,7 @@ visit2360 = Visit(
 infant_schedule_v3.add_visit(visit=visit2000)
 infant_schedule_v3.add_visit(visit=visit2010)
 infant_schedule_v3.add_visit(visit=visit2020)
+infant_schedule_v3.add_visit(visit=visit2060)
 infant_schedule_v3.add_visit(visit=visit2120)
 infant_schedule_v3.add_visit(visit=visit2180)
 infant_schedule_v3.add_visit(visit=visit2240)
