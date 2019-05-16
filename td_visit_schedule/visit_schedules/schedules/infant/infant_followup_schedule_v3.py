@@ -9,7 +9,7 @@ from ...crfs_requisitions import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020,
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
     infant_crf_2300, infant_crf_2360, infant_crf_2060,
-    infant_requisitions_prn as infant_requisitions_prn)
+    infant_requisitions_prn)
 
 default_requisitions = None
 
