@@ -32,7 +32,7 @@ infant_schedule_v1 = Schedule(
     name='infant_schedule_v1',
     verbose_name='Day 1 to 36 months Follow-up V1',
     onschedule_model='td_infant.onscheduleinfantbirth',
-    offschedule_model='td_infant.infantoffstudy',
+    offschedule_model='td_prn.infantoffstudy',
     consent_model='td_infant.infantdummysubjectconsent',
     appointment_model='td_infant.appointment')
 
