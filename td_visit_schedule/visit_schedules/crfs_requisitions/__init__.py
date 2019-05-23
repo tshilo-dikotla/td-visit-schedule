@@ -6,7 +6,8 @@ from .infant_requisitions import (
     infant_birth_requisitions, infant_1month_requisitions,
     infant_followup_requisitions, infant_36month_requisitions,
     infant_18month_requisitions, infant_requisitions_prn,
-    infant_24month_requisitions)
+    infant_24month_requisitions, karabo_infant_requisitions_2060,
+    karabo_infant_requisitions_2120)
 from .maternal_crfs import (
     crf_1000, crf_1010, crf_1020, crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2120, crf_2180, crf_2240, crf_2300, crf_2360)
