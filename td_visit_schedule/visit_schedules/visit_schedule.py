@@ -78,7 +78,7 @@ infant_visit_schedule_v1 = VisitSchedule(
     name='infant_visit_schedule_v1',
     verbose_name='Infant Visit Schedule V1',
     offstudy_model='td_prn.infantoffstudy',
-    death_report_model='td_infant.infantdeathreport',
+    death_report_model='td_prn.infantdeathreport',
     locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
@@ -88,7 +88,7 @@ infant_visit_schedule_v3 = VisitSchedule(
     name='infant_visit_schedule_v3',
     verbose_name='Infant Visit Schedule V3',
     offstudy_model='td_prn.infantoffstudy',
-    death_report_model='td_infant.infantdeathreport',
+    death_report_model='td_prn.infantdeathreport',
     locator_model='td_maternal.maternallocator',
     previous_visit_schedule=None
 )
