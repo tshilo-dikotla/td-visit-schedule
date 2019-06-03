@@ -43,8 +43,7 @@ crf_2000 = FormsCollection(
 
 crf_2010 = FormsCollection(
     Crf(show_order=1, model='td_maternal.maternalpostpartumfu'),
-    Crf(show_order=2, model='td_maternal.maternalpostpartumdep',
-        required=False),
+    Crf(show_order=2, model='td_maternal.maternalpostpartumdep'),
     Crf(show_order=3, model='td_maternal.maternalarvpost', required=False),
     Crf(show_order=4, model='td_maternal.maternalarvpostadh', required=False),
     Crf(show_order=5, model='td_maternal.maternalinterimidcc', required=False),
