@@ -15,15 +15,12 @@ infant_requisitions_prn = FormsCollection(
         panel=infant_glucose_panel, required=False, additional=False),
     Requisition(
         show_order=40,
-        panel=infant_pbmc_pl_panel, required=False, additional=False),
-    Requisition(
-        show_order=50,
         panel=dna_pcr, required=False, additional=False),
     Requisition(
-        show_order=60,
+        show_order=50,
         panel=dbs_panel, required=False, additional=False),
     Requisition(
-        show_order=70,
+        show_order=60,
         panel=infant_elisa_panel, required=False, additional=False),
     name='infant_requisitions_prn')
 
