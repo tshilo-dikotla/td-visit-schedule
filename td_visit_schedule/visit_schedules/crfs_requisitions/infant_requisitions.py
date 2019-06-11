@@ -1,7 +1,8 @@
 from edc_visit_schedule import FormsCollection, Requisition
 from td_labs import (
     infant_insulin, serum_panel, infant_glucose_panel,
-    infant_pbmc_pl_panel, dna_pcr, dbs_panel, infant_elisa_panel, infant_wb_panel)
+    infant_pbmc_pl_panel, dna_pcr, dbs_panel, infant_elisa_panel,
+    infant_wb_panel, infant_paxgene_panel)
 
 infant_requisitions_prn = FormsCollection(
     Requisition(
@@ -49,6 +50,8 @@ infant_1month_requisitions = FormsCollection(
         show_order=50, panel=serum_panel, required=True, additional=True),
     Requisition(
         show_order=60, panel=dbs_panel, required=False, additional=True),
+    Requisition(
+        show_order=70, panel=infant_paxgene_panel, required=False, additional=True),
     name='requisitions_2010'
 )
 
