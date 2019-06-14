@@ -29,7 +29,7 @@ maternal_labour_del_schedule_v3 = Schedule(
     name='mld_schedule_3',
     verbose_name='Day 1 to 36 months Follow-up V3',
     onschedule_model='td_maternal.onschedulematernallabourdel',
-    offschedule_model='td_prn.maternaloffstudy',
+    offschedule_model='td_maternal.maternaloffschedule',
     consent_model='td_maternal.subjectconsent',
     appointment_model='edc_appointment.appointment')
 
