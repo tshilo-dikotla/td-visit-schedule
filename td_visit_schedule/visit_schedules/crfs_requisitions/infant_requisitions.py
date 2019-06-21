@@ -32,6 +32,8 @@ infant_birth_requisitions = FormsCollection(
         show_order=20, panel=serum_panel, required=True, additional=True),
     Requisition(
         show_order=30, panel=infant_glucose_panel, required=True, additional=True),
+    Requisition(
+        show_order=40, panel=infant_pbmc_pl_panel, required=True, additional=True),
     name='requisitions_2000'
 )
 
