@@ -71,7 +71,7 @@ karabo_infant_requisitions_2120 = FormsCollection(
     Requisition(
         show_order=10, panel=dna_pcr, required=False, additional=True),
     Requisition(
-        show_order=20, panel=karabo_pbmc_pl_panel, required=False, additional=True),
+        show_order=20, panel=karabo_pbmc_pl_panel, required=False, additional=False),
     name='requisitions_2120'
 )
 
@@ -85,7 +85,7 @@ infant_18month_requisitions = FormsCollection(
     Requisition(
         show_order=40, panel=infant_pbmc_pl_panel, required=True, additional=True),
     Requisition(
-        show_order=50, panel=karabo_pbmc_pl_panel, required=False, additional=True),
+        show_order=50, panel=karabo_pbmc_pl_panel, required=False, additional=False),
     name='requisitions_2180'
 )
 
