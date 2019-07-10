@@ -1,7 +1,7 @@
 from edc_visit_schedule import FormsCollection, Requisition
 from td_labs import (
     infant_insulin, serum_panel, infant_glucose_panel,
-    infant_pbmc_pl_store_panel, dna_pcr, dbs_panel, infant_elisa_panel, infant_pbmc_pl_panel
+    infant_pbmc_pl_store_panel, dna_pcr, dbs_panel, infant_elisa_panel, infant_pbmc_pl_panel,
     infant_paxgene_panel, karabo_pbmc_pl_panel, karabo_wb_pbmc_pl_panel)
 
 infant_requisitions_prn = FormsCollection(
