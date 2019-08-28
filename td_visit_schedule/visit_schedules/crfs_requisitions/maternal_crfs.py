@@ -48,7 +48,7 @@ crf_2010 = FormsCollection(
     Crf(show_order=4, model='td_maternal.maternalinterimidcc', required=False),
     Crf(show_order=5, model='td_maternal.rapidtestresult', required=False),
     Crf(show_order=6, model='td_maternal.maternalclinicalmeasurementstwo'),
-    Crf(show_order=7, model='td_maternal.maternalcontraception'),
+    Crf(show_order=7, model='td_maternal.maternalcontraception', required=False),
     name='followup1')
 
 crf_2020 = FormsCollection(
