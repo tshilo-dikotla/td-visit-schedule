@@ -23,6 +23,10 @@ infant_requisitions_prn = FormsCollection(
     Requisition(
         show_order=60,
         panel=infant_elisa_panel, required=False, additional=False),
+    Requisition(
+        show_order=70, panel=infant_paxgene_panel, required=False, additional=False),
+    Requisition(
+        show_order=80, panel=karabo_wb_pbmc_pl_panel, required=False, additional=False),
     name='infant_requisitions_prn')
 
 infant_birth_requisitions = FormsCollection(
