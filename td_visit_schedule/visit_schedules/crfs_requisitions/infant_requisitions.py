@@ -29,6 +29,10 @@ infant_requisitions_prn = FormsCollection(
         show_order=80, panel=karabo_wb_pbmc_pl_panel, required=False, additional=False),
     Requisition(
         show_order=90, panel=karabo_pbmc_pl_panel, required=False, additional=False),
+    Requisition(
+        show_order=100, panel=infant_pbmc_pl_store_panel, required=True, additional=True),
+    Requisition(
+        show_order=110, panel=infant_pbmc_pl_panel, required=True, additional=True),
     name='infant_requisitions_prn')
 
 infant_birth_requisitions = FormsCollection(
