@@ -19,6 +19,9 @@ requisitions_prn = FormsCollection(
     Requisition(
         show_order=50,
         panel=glucose_2h_panel, required=False, additional=False),
+    Requisition(
+        show_order=60,
+        panel=pbmc_pl_panel, required=False, additional=False),
     name='requisitions_prn')
 
 requisitions_1010m = FormsCollection(
