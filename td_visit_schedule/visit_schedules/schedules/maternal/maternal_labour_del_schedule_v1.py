@@ -1,12 +1,14 @@
-from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
+
+from dateutil.relativedelta import relativedelta
 
 from ...crfs_requisitions import (
     crf_2000, crf_2010, crf_2020,
     crf_2060, crf_2120, crf_2180,
     crf_2240, crf_2300, crf_2360)
-from ...crfs_requisitions import (requisitions_followup,
-                                  requisitions_prn as default_requisitions_prn)
+from ...crfs_requisitions import maternal_crfs_prn
+from ...crfs_requisitions import requisitions_followup
+from ...crfs_requisitions import requisitions_prn as default_requisitions_prn
 
 default_requisitions = None
 
@@ -87,6 +89,7 @@ visit2120 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
     crfs=crf_2120,
+    crfs_prn=maternal_crfs_prn,
     facility_name='5-day clinic')
 
 visit2180 = Visit(
@@ -98,6 +101,7 @@ visit2180 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
     crfs=crf_2180,
+    crfs_prn=maternal_crfs_prn,
     facility_name='5-day clinic')
 
 visit2240 = Visit(
@@ -109,6 +113,7 @@ visit2240 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
     crfs=crf_2240,
+    crfs_prn=maternal_crfs_prn,
     facility_name='5-day clinic')
 
 visit2300 = Visit(
@@ -120,6 +125,7 @@ visit2300 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
     crfs=crf_2300,
+    crfs_prn=maternal_crfs_prn,
     facility_name='5-day clinic')
 
 visit2360 = Visit(
@@ -131,6 +137,7 @@ visit2360 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_followup,
     crfs=crf_2360,
+    crfs_prn=maternal_crfs_prn,
     facility_name='5-day clinic')
 
 maternal_labour_del_schedule_v1.add_visit(visit2000)
