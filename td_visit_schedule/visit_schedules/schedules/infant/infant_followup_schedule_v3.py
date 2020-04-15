@@ -10,7 +10,7 @@ from ...crfs_requisitions import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020,
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
     infant_crf_2300, infant_crf_2360, infant_crf_2060,
-    infant_requisitions_prn)
+    infant_requisitions_prn, infant_crfs_prn)
 
 default_requisitions = None
 
@@ -90,6 +90,7 @@ visit2120 = Visit(
     rupper=relativedelta(months=3),
     requisitions=karabo_infant_requisitions_2120,
     crfs=infant_crf_2120,
+    crfs_prn=infant_crfs_prn,
     facility_name='5-day clinic')
 
 visit2180 = Visit(
@@ -101,6 +102,7 @@ visit2180 = Visit(
     rupper=relativedelta(months=3),
     requisitions=infant_18month_requisitions,
     crfs=infant_crf_2180,
+    crfs_prn=infant_crfs_prn,
     facility_name='5-day clinic')
 
 visit2240 = Visit(
@@ -112,6 +114,7 @@ visit2240 = Visit(
     rupper=relativedelta(months=3),
     requisitions=infant_24month_requisitions,
     crfs=infant_crf_2240,
+    crfs_prn=infant_crfs_prn,
     facility_name='5-day clinic')
 
 visit2300 = Visit(
@@ -123,6 +126,7 @@ visit2300 = Visit(
     rupper=relativedelta(months=3),
     requisitions=infant_followup_requisitions,
     crfs=infant_crf_2300,
+    crfs_prn=infant_crfs_prn,
     facility_name='5-day clinic')
 
 visit2360 = Visit(
@@ -134,6 +138,7 @@ visit2360 = Visit(
     rupper=relativedelta(months=3),
     requisitions=infant_36month_requisitions,
     crfs=infant_crf_2360,
+    crfs_prn=infant_crfs_prn,
     facility_name='5-day clinic')
 
 infant_schedule_v3.add_visit(visit=visit2000)
