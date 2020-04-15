@@ -86,6 +86,7 @@ crf_2120 = FormsCollection(
     Crf(show_order=8, model='td_maternal.rapidtestresult', required=False),
     Crf(show_order=9, model='td_maternal.maternalsrh', required=False),
     Crf(show_order=10, model='td_maternal.maternalrecontact'),
+    Crf(show_order=11, model='td_maternal.maternalcovidscreening'),
     name='followup4')
 
 crf_2180 = FormsCollection(
@@ -97,6 +98,7 @@ crf_2180 = FormsCollection(
     Crf(show_order=6, model='td_maternal.maternalcontraception'),
     Crf(show_order=7, model='td_maternal.maternalsrh', required=False),
     Crf(show_order=8, model='td_maternal.maternalrecontact'),
+    Crf(show_order=9, model='td_maternal.maternalcovidscreening'),
     name='followup5')
 
 crf_2240 = FormsCollection(
@@ -108,6 +110,7 @@ crf_2240 = FormsCollection(
     Crf(show_order=6, model='td_maternal.maternalcontraception'),
     Crf(show_order=7, model='td_maternal.maternalsrh', required=False),
     Crf(show_order=8, model='td_maternal.maternalrecontact'),
+    Crf(show_order=9, model='td_maternal.maternalcovidscreening'),
     name='follow6')
 
 crf_2300 = FormsCollection(
@@ -119,6 +122,7 @@ crf_2300 = FormsCollection(
     Crf(show_order=6, model='td_maternal.maternalcontraception'),
     Crf(show_order=7, model='td_maternal.maternalsrh', required=False),
     Crf(show_order=8, model='td_maternal.maternalrecontact'),
+    Crf(show_order=9, model='td_maternal.maternalcovidscreening'),
     name='followup7')
 
 crf_2360 = FormsCollection(
@@ -130,4 +134,5 @@ crf_2360 = FormsCollection(
     Crf(show_order=6, model='td_maternal.maternalcontraception'),
     Crf(show_order=7, model='td_maternal.maternalsrh', required=False),
     Crf(show_order=8, model='td_maternal.maternalrecontact'),
+    Crf(show_order=9, model='td_maternal.maternalcovidscreening'),
     name='followup8')
