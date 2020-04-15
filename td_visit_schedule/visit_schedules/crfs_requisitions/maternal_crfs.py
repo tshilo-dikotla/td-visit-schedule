@@ -1,7 +1,7 @@
 from edc_visit_schedule import FormsCollection, Crf
 
 crfs_prn = FormsCollection(
-    Crf(show_order=1, model='td_infant.maternalcovidscreening',
+    Crf(show_order=1, model='td_maternal.maternalcovidscreening',
         required=False, additional=False),
     name='maternal_crf_prn')
 
