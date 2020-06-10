@@ -106,9 +106,9 @@ infant_24month_requisitions = FormsCollection(
     Requisition(
         show_order=20, panel=infant_glucose_panel, required=True, additional=True),
     Requisition(
-        show_order=30, panel=serum_panel, required=True, additional=True),
+        show_order=30, panel=infant_pbmc_pl_store_panel, required=True, additional=True),
     Requisition(
-        show_order=40, panel=infant_pbmc_pl_store_panel, required=True, additional=True),
+        show_order=40, panel=serum_panel, required=True, additional=True),
     name='requisitions_2240'
 )
 
