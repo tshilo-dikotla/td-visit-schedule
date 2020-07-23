@@ -2,6 +2,7 @@ from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ...crfs_requisitions import crf_1000
+from ...crfs_requisitions import maternal_crfs_unscheduled
 
 
 class Visit(BaseVisit):
@@ -11,7 +12,7 @@ class Visit(BaseVisit):
                  allow_unscheduled=None, **kwargs):
         super().__init__(
             allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
-            crfs_unscheduled=crfs_unscheduled,
+            crfs_unscheduled=crfs_unscheduled or maternal_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled,
             crfs_prn=crfs_prn,
             requisitions_prn=requisitions_prn,
