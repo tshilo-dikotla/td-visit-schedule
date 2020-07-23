@@ -11,7 +11,7 @@ from ...crfs_requisitions import (
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
     infant_crf_2300, infant_crf_2360, infant_crf_2060,
     infant_requisitions_prn as infant_requisitions_prn,
-    infant_crfs_prn)
+    infant_crfs_prn, infant_crfs_unscheduled)
 
 default_requisitions = None
 
@@ -23,7 +23,7 @@ class Visit(BaseVisit):
                  allow_unscheduled=None, **kwargs):
         super().__init__(
             allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
-            crfs_unscheduled=crfs_unscheduled,
+            crfs_unscheduled=crfs_unscheduled or infant_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
             crfs_prn=crfs_prn,
             requisitions_prn=requisitions_prn or infant_requisitions_prn,
