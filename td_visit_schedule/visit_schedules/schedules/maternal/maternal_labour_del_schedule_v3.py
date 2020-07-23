@@ -5,7 +5,7 @@ from dateutil.relativedelta import relativedelta
 from ...crfs_requisitions import (
     crf_2000, crf_2010, crf_2020, crf_2120,
     crf_2060, crf_2180, crf_2240,
-    crf_2300, crf_2360, maternal_crfs_prn)
+    crf_2300, crf_2360, maternal_crfs_prn, maternal_crfs_unscheduled)
 from ...crfs_requisitions import (requisitions_followup,
                                   requisitions_prn as default_requisitions_prn)
 
@@ -19,7 +19,7 @@ class Visit(BaseVisit):
                  allow_unscheduled=None, **kwargs):
         super().__init__(
             allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
-            crfs_unscheduled=crfs_unscheduled,
+            crfs_unscheduled=crfs_unscheduled or maternal_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
             crfs_prn=crfs_prn,
             requisitions_prn=requisitions_prn or default_requisitions_prn,

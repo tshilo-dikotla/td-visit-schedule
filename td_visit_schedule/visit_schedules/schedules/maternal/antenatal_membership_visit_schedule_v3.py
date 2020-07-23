@@ -5,6 +5,7 @@ from ...crfs_requisitions import (requisitions_1010m,
                                   requisitions_1020m,
                                   requisitions_prn as default_requisitions_prn)
 from ...crfs_requisitions import crf_1010, crf_1020
+from ...crfs_requisitions import maternal_crfs_unscheduled
 
 default_requisitions = None
 
@@ -16,7 +17,7 @@ class Visit(BaseVisit):
                  allow_unscheduled=None, **kwargs):
         super().__init__(
             allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
-            crfs_unscheduled=crfs_unscheduled,
+            crfs_unscheduled=crfs_unscheduled or maternal_crfs_unscheduled,
             requisitions_unscheduled=requisitions_unscheduled or default_requisitions,
             crfs_prn=crfs_prn,
             requisitions_prn=requisitions_prn or default_requisitions_prn,
