@@ -9,7 +9,7 @@ from ...crfs_requisitions import (
 from ...crfs_requisitions import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020,
     infant_crf_2120, infant_crf_2180, infant_crf_2240,
-    infant_crf_2300, infant_crf_2360, infant_crf_2060,
+    infant_crf_2300, infant_crf_2360, infant_crf_2060, crf_prn_2060,
     infant_requisitions_prn, infant_crfs_prn, infant_crfs_unscheduled)
 
 default_requisitions = None
@@ -79,6 +79,7 @@ visit2060 = Visit(
     rupper=relativedelta(days=60),
     requisitions=karabo_infant_requisitions_2060,
     crfs=infant_crf_2060,
+    crfs_prn=crf_prn_2060,
     facility_name='5-day clinic')
 
 visit2120 = Visit(
