@@ -1,7 +1,7 @@
 from .infant_crfs import (
     infant_crf_2000, infant_crf_2010, infant_crf_2020, infant_crf_2060,
     infant_crf_2120, infant_crf_2180, infant_crf_2240, infant_crf_2300,
-    infant_crf_2360, crfs_prn as infant_crfs_prn, infant_crfs_unscheduled)
+    infant_crf_2360, crfs_prn as infant_crfs_prn, crf_prn_2060, infant_crfs_unscheduled)
 from .infant_requisitions import (
     infant_birth_requisitions, infant_1month_requisitions,
     infant_followup_requisitions, infant_36month_requisitions,

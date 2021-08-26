@@ -1,9 +1,14 @@
 from edc_visit_schedule import FormsCollection, Crf
 
 crfs_prn = FormsCollection(
-    Crf(show_order=1, model='td_infant.infantcovidscreening',
+    Crf(show_order=2, model='td_infant.infantarvproph',
         required=False, additional=False),
     name='infant_crf_prn')
+
+crf_prn_2060 = FormsCollection(
+    Crf(show_order=2, model='td_infant.infantarvproph',
+        required=False, additional=False),
+    name='infant_crf_prn_2060')
 
 infant_crf_2000 = FormsCollection(
     Crf(show_order=1, model='td_infant.infantbirthdata'),
